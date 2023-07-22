@@ -16,6 +16,20 @@ A powerful 💪 bash script to automate the process of maintaining code quality 
 
 This project provides a bash script that automates various tasks related to maintaining code quality in Python projects. Whether you're an individual developer or part of a larger team, this tool offers a flexible solution to keep your Python code clean, efficient, and secure.
 
+The script performs the following actions:
+
+1. Installs necessary Python packages for linting, formatting, and complexity analysis.
+2. Runs linters and formatters including flake8, pylint, pycodestyle, pydocstyle, autopep8, isort, and black on the Python project.
+3. Performs type checking with mypy.
+4. Scans the Python code for security vulnerabilities with Bandit.
+5. Analyzes the complexity of the Python code with Radon.
+6. Runs tests on the Python project with pytest.
+7. Checks code coverage of the tests.
+8. Checks for known security vulnerabilities in the installed dependencies with Safety.
+9. Generates a requirements file with pipreqs.
+10. Creates a `.gitignore` and optionally a `.dockerignore` file.
+11. Counts the lines of code in the Python project with cloc.
+
 ## 🚀 Installation
 
 📥 To install and set up the project, follow these steps:
@@ -26,7 +40,7 @@ This project provides a bash script that automates various tasks related to main
 
 ## 🛠️ Usage
 
-You can run the script using the bash command in the terminal: `bash code_quality.sh`. Remember to replace the `DIR` variable in the script with the path to your Python project directory.
+You can run the script using the bash command in the terminal: `bash code_quality.sh`. Remember to replace the `DIR` variable in the script with the path to your Python project directory. The `REQUIREMENTS` variable should point to the location where you want to generate the requirements file.
 
 ## 🧪 Tests
 

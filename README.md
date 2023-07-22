@@ -1,4 +1,4 @@
-# 🚀 Project Title: Code Quality Automation
+# 🚀 Python Code Quality Assurance Toolkit
 
 A powerful 💪 bash script to automate the process of maintaining code quality in Python projects.
 
@@ -14,7 +14,7 @@ A powerful 💪 bash script to automate the process of maintaining code quality 
 
 ## 📚 Description
 
-This project provides a bash script that automates various tasks related to maintaining code quality in Python projects. Whether you're an individual developer or part of a larger team, this tool offers a flexible solution to keep your Python code clean, efficient, and secure.
+The Python Code Quality Assurance Toolkit provides a bash script that automates various tasks related to maintaining code quality in Python projects. Whether you're an individual developer or part of a larger team, this tool offers a flexible solution to keep your Python code clean, efficient, and secure.
 
 The script performs the following actions:
 

@@ -81,12 +81,12 @@ mv $DIR/requirements.txt $REQUIREMENTS
 echo "--------------------------------------------------------------------------------"
 
 echo "${MAGENTA}Creating .gitignore...${NORMAL}"
-echo -e "venv/\n*.pyc\n__pycache__/\n.DS_Store\n.vscode/\n**/*.env\npycache/\nsettings/\n**/*.log\n*.sqlite\n*.sql\n*.csv\n*.xlsx\n*.xls\n.pytest_cache/\nhtmlcov/\n*.cover\n.hypothesis/\n.mypy_cache/\n*.prof\n.ipynb_checkpoints/\n.vs/\n.history/\nMANIFEST\nnode_modules/\nnpm-debug.log\n.sass-cache/\n*.pyre" > $PWD/.gitignore
+echo -e "venv/\n*.pyc\n__pycache__/\n.DS_Store\n.vscode/\n**/*.env\npycache/\nsettings/\n**/*.log\n*.sqlite\n*.sql\n*.csv\n*.xlsx\n*.xls\n.pytest_cache/\nhtmlcov/\n*.cover\n.hypothesis/\n.mypy_cache/\n*.prof\n.ipynb_checkpoints/\n.vs/\n.history/\nMANIFEST\nnode_modules/\nnpm-debug.log\n.sass-cache/\n*.pyre\n.coverage" > $PWD/.gitignore
 echo "--------------------------------------------------------------------------------"
 
 if [ -f "$PWD/Dockerfile" ]; then
     echo "${MAGENTA}Creating .dockerignore...${NORMAL}"
-    echo -e "venv/\n*.pyc\n__pycache__/\n.DS_Store\n.vscode/\n**/*.env\npycache/\nsettings/\n**/*.log\n*.sqlite\n*.sql\n*.csv\n*.xlsx\n*.xls\n.pytest_cache/\nhtmlcov/\n*.cover\n.hypothesis/\n.mypy_cache/\n*.prof\n.ipynb_checkpoints/\n.vs/\n.history/\nMANIFEST\nnode_modules/\nnpm-debug.log\n.sass-cache/\n*.pyre" > $PWD/.dockerignore
+    echo -e "venv/\n*.pyc\n__pycache__/\n.DS_Store\n.vscode/\n**/*.env\npycache/\nsettings/\n**/*.log\n*.sqlite\n*.sql\n*.csv\n*.xlsx\n*.xls\n.pytest_cache/\nhtmlcov/\n*.cover\n.hypothesis/\n.mypy_cache/\n*.prof\n.ipynb_checkpoints/\n.vs/\n.history/\nMANIFEST\nnode_modules/\nnpm-debug.log\n.sass-cache/\n*.pyre\n.coverage" > $PWD/.dockerignore
     echo "--------------------------------------------------------------------------------"
 fi
 

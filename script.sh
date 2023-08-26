@@ -81,12 +81,12 @@ mv $DIR/requirements.txt $REQUIREMENTS
 echo "--------------------------------------------------------------------------------"
 
 echo "${MAGENTA}Creating .gitignore...${NORMAL}"
-echo -e "venv/\n*.pyc\n__pycache__/\n.DS_Store\n.vscode/\n**/*.env\npycache/\nsettings/\n**/*.log\n*.sqlite\n*.sql\n*.csv\n*.xlsx\n*.xls\n.pytest_cache/\nhtmlcov/\n*.cover\n.hypothesis/\n.mypy_cache/\n*.prof\n.ipynb_checkpoints/\n.vs/\n.history/\nMANIFEST\nnode_modules/\nnpm-debug.log\n.sass-cache/\n*.pyre\n.coverage\n.idea\n.idea/*\n**/node_modules/**\n**/vendor/**\nkeys.ini\n**__pycache__**\n*/logs/*\nTODO.txt\n.VSCodeCounter*\ntest.py\n*.pyc*\n.vscode\n*test*\nresult.json\nbuild*\n*monkey*\n*keys.env*\n*egg*\ndist*" > $PWD/.gitignore
+echo -e "venv/\n*.pyc\n__pycache__/\n.DS_Store\n.vscode/\n**/*.env\npycache/\nsettings/\n**/*.log\n*.sqlite\n*.sql\n*.csv\n*.xlsx\n*.xls\n.pytest_cache/\nhtmlcov/\n*.cover\n.hypothesis/\n.mypy_cache/\n*.prof\n.ipynb_checkpoints/\n.vs/\n.history/\nMANIFEST\nnode_modules/\nnpm-debug.log\n.sass-cache/\n*.pyre\n.coverage\n.idea\n.idea/*\n**/node_modules/**\n**/vendor/**\nkeys.ini\n**__pycache__**\n*/logs/*\nTODO.txt\n.VSCodeCounter*\ntest.py\n*.pyc*\n.vscode\n*test*\nresult.json\nbuild*\n*monkey*\n*keys.env*\n*egg*\ndist*\nlinting_script.sh" > $PWD/.gitignore
 echo "--------------------------------------------------------------------------------"
 
 if [ -f "$PWD/Dockerfile" ]; then
     echo "${MAGENTA}Creating .dockerignore...${NORMAL}"
-    echo -e "venv/\n*.pyc\n__pycache__/\n.DS_Store\n.vscode/\n**/*.env\npycache/\nsettings/\n**/*.log\n*.sqlite\n*.sql\n*.csv\n*.xlsx\n*.xls\n.pytest_cache/\nhtmlcov/\n*.cover\n.hypothesis/\n.mypy_cache/\n*.prof\n.ipynb_checkpoints/\n.vs/\n.history/\nMANIFEST\nnode_modules/\nnpm-debug.log\n.sass-cache/\n*.pyre\n.coverage" > $PWD/.dockerignore
+    echo -e "venv/\n*.pyc\n__pycache__/\n.DS_Store\n.vscode/\n**/*.env\npycache/\nsettings/\n**/*.log\n*.sqlite\n*.sql\n*.csv\n*.xlsx\n*.xls\n.pytest_cache/\nhtmlcov/\n*.cover\n.hypothesis/\n.mypy_cache/\n*.prof\n.ipynb_checkpoints/\n.vs/\n.history/\nMANIFEST\nnode_modules/\nnpm-debug.log\n.sass-cache/\n*.pyre\n.coverage\nlinting_script.sh" > $PWD/.dockerignore
     echo "--------------------------------------------------------------------------------"
 fi
 
